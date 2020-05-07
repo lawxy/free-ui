@@ -8,7 +8,7 @@ interface Props extends BasicProps<HTMLElement> {
 
 export class Content extends CustomCmp<Props, {}> {
     render() {
-        console.log(this.props)
+        // console.log(this.props)
         return (
             <section className={`free-content ${this.getCustomClass()}`} style={this.getFreeStyle()}>
                 {this.props.children}

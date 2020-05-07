@@ -20,7 +20,7 @@ export class Container extends CustomCmp<Props, State> {
     // 判断子组件中是否有Aside组件  以此修改样式规则
     judgeHasAside() {
         const nodeArr: Array<Exclude<ReactNode, boolean | null | undefined>> = React.Children.toArray(this.props.children);
-        console.log(nodeArr)
+        // console.log(nodeArr)
         for (let i = 0; i < nodeArr.length; i++) {
             let node = nodeArr[i] as ReactElement;
             if (node.type && typeof node.type === 'function' && node.type.name === 'Aside') {
